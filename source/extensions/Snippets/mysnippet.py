@@ -1,4 +1,4 @@
-from my_company.my_python_ui_extension.extension import some_public_function
+from my_company.my_python_extension.extension import some_public_function
 
 print("time to call a function in our extension")
 some_public_function(5)
