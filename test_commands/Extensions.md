@@ -17,10 +17,12 @@ Kit ->Developer -> VS Code Link
 VCode - Run -> In VS Code, start debugging.
 
 
-`def some_public_function(x: int):
+```python
+def some_public_function(x: int):
 """This is a public function that can be called from other extensions."""
 print(f"[softserve.my_python_ui_extension] some_public_function was called with {x}")
-return x ** x`
+return x ** x
+```
 
 
 Go to Developer then Extensions.
@@ -28,18 +30,21 @@ Go to Developer then Extensions.
 Type softserve.my_python_ui_extension in search field
 
 
-`from softserve.my_python_ui_extension.extension import some_public_function
+```python
+from softserve.my_python_ui_extension.extension import some_public_function
 print("time to call a function in our extension")
-some_public_function(5}`
+some_public_function(5)
+```
 
 
 
-`set OMNI_REPO_ROOT="%~dp0"
+```python
+set OMNI_REPO_ROOT="%~dp0"
 call "%~dp0_build\windows-x86_64\release\softserve.usd_composer_template.kit.bat" ^
 --enable omni.kit.debug.python ^
 --/exts/omni.kit.debug.python/waitForClient=1 ^
---/exts/omni.kit.debug.python/break=1%*`
-
+--/exts/omni.kit.debug.python/break=1%*
+```
 
 
 
